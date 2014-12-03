@@ -12,8 +12,8 @@
 
 #ifndef sFDW_h
 #define sFDW_h
-#include "WProgram.h
-#include Arduino.h
+#include "WProgram.h"
+#include "Arduino.h""
 
 class sFDW
 {
