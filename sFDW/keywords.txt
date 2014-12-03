@@ -1,0 +1,4 @@
+sFDW  KEYWORD1
+sPin  KEYWORD2
+mPinsStateHigh  KEYWORD2
+mPinsStateLow  KEYWORD2
