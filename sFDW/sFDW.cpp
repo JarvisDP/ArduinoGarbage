@@ -32,25 +32,19 @@ void sFDW::sPin(int pin, boolean state)
 void sFDW::mPinsStateHigh(int pins[20])
 {
 	
-	for (_i = 0; _i <= 19; i++) 
+	for (_i = 0; _i <= sizeof(pins)-1; _i++) 
 	{
 		pin=pins[_i];
-			if (pin != 99)
-				{
-					sFDW::sPin(pin, 1);
-				}
+		sFDW::sPin(pin, 1);
 	}
 }
 
 void sFDW::mPinsStateLow(int pins[20])
 {
 	
-	for (_i = 0; _i <= 19; i++) 
+	for (_i = 0; _i <= sizeof(pins)-1; _i++) 
 	{
 		pin=pins[_i];
-			if (pin != 99)
-				{
-					sFDW::sPin(pin, 0);
-				}
+		sFDW::sPin(pin, 0);
 	}
 }
