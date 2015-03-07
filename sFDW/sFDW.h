@@ -18,12 +18,13 @@
 class sFDW
 {
   public:
-    void sPin(int pin, boolean state);
-    void mPinsStateHigh(int pins);
-	void mPinsStateLow(int pins);
-	int pins[20]={99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99};
-	int pin;
-	boolean state;
+  void sPin(int pin, boolean state);
+  void mPinsStateHigh(int pins);
+  void mPinsStateLow(int pins);
+  int pins[20];
+  int pin;
+  boolean state;
+  
   private:
 	const byte _pinsState[20]={
 	{11111110},  //0  portd
